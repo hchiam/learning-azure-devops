@@ -65,3 +65,7 @@ Another example:
 - Release CD pipeline: <https://dev.azure.com/hchiam/react-app/_releaseProgress?_a=release-pipeline-progress&releaseId=1>
 - <https://github.com/hchiam/react-app>
 - <https://dev.azure.com/hchiam/react-app/_build/results?buildId=11&view=logs&j=275f1d19-1bd8-5591-b06b-07d489ea915a>
+
+## More learning
+
+<https://www.youtube.com/watch?v=H-R2bCXfz8I>
