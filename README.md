@@ -2,8 +2,6 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-<https://dev.azure.com/hchiam>
-
 My first Azure DevOps git repo: <https://dev.azure.com/hchiam/_git/test-azure-devops-project>
 
 You can set up automated tests, just like Travis CI on GitHub: use Pipelines, select a template, and it'll run automatically. For example:
