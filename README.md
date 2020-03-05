@@ -12,7 +12,9 @@ You can set up automated tests, just like Travis CI on GitHub: use Pipelines, se
 - <https://dev.azure.com/hchiam/code-inspiration/_build/results?buildId=42&view=logs&j=bf812b03-26a5-57bb-2723-1df9c646b646>
 - <https://dev.azure.com/hchiam/code-inspiration/_build>
 
-Example `azure-pipelines.yml` that can run the app while running a Selenium .side test:
+<details>
+
+<summary>Example `azure-pipelines.yml` that can run the app while running a Selenium .side test: (Click to expand)</summary>
 
 ```yaml
 trigger:
@@ -61,6 +63,8 @@ stages:
     - script: 'npx react-scripts start & npm run side-test'
       displayName: 'start (npx) & side-test'
 ```
+
+</details>
 
 Another example:
 
