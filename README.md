@@ -69,3 +69,7 @@ Another example:
 ## More learning
 
 <https://www.youtube.com/watch?v=H-R2bCXfz8I>
+
+## Example of a Azure Devops repo running Cypress tests
+
+<https://dev.azure.com/hchiam/test-cypress>
