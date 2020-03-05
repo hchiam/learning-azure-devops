@@ -2,6 +2,8 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
+<https://dev.azure.com/hchiam>
+
 My first Azure DevOps git repo: <https://dev.azure.com/hchiam/_git/test-azure-devops-project>
 
 You can set up automated tests, just like Travis CI on GitHub: use Pipelines, select a template, and it'll run automatically. For example:
@@ -74,3 +76,28 @@ Another example:
 
 <https://dev.azure.com/hchiam/_git/test-cypress?path=README.md>
 
+<details>
+
+<summary>YAML: (Click to expand)</summary>
+
+```yml
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: npm install
+  displayName: 'Install Dependencies'
+
+- script: npx cypress run
+  displayName: 'Run Cypress Test'
+```
+
+</details>
