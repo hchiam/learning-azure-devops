@@ -72,4 +72,5 @@ Another example:
 
 ## Example of an Azure Devops repo running Cypress tests (+Cucumber/Gherkin)
 
-<https://dev.azure.com/hchiam/test-cypress>
+<https://dev.azure.com/hchiam/_git/test-cypress?path=README.md>
+
