@@ -103,3 +103,35 @@ steps:
 ```
 
 </details>
+
+## Example of an Azure DevOps repo running cross-browser testing
+
+Selenium WebDriver on Firefox (could also be on Chrome and Internet Explorer): <https://dev.azure.com/hchiam/test-cross-browser-testing/_git/test-cross-browser-testing-selenium?path=README.md>
+
+Results: <https://dev.azure.com/hchiam/test-cross-browser-testing/_build/results?buildId=51&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=5caf77c8-9b10-50ef-b5c7-ca89c63e1c86>
+
+<details>
+
+<summary>YAML: (Click to expand)</summary>
+
+```yml
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: npm install
+  displayName: 'Install Dependencies'
+
+- script: node index
+  displayName: 'Run Selenium WebDriver Test'
+```
+
+</details>
