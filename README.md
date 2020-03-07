@@ -4,6 +4,8 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
 Just like Travis CI on GitHub, you can set up automated tests in Azure DevOps to run whenever you commit to master: use Pipelines, select a template, and it'll run automatically. `azure-pipelines.yml` can be automagically generated or manually created to set up your tests.
 
+Current favourites: [Selenium WebDriver](https://dev.azure.com/hchiam/test-cross-browser-testing/_git/test-cross-browser-testing-selenium?path=%2Fazure-pipelines.yml) and [Cypress](https://dev.azure.com/hchiam/test-cypress/_git/test-cypress?path=%2Fazure-pipelines.yml).
+
 ## [My first Azure DevOps git repo](https://dev.azure.com/hchiam/_git/test-azure-devops-project)
 
 <https://dev.azure.com/hchiam/_git/test-azure-devops-project>
