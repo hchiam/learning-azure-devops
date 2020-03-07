@@ -2,17 +2,23 @@
 
 Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
-My first Azure DevOps git repo: <https://dev.azure.com/hchiam/_git/test-azure-devops-project>
+Just like Travis CI on GitHub, you can set up automated tests in Azure DevOps to run whenever you commit to master: use Pipelines, select a template, and it'll run automatically. `azure-pipelines.yml` can be automagically generated or manually created to set up your tests.
 
-You can set up automated tests, just like Travis CI on GitHub: use Pipelines, select a template, and it'll run automatically. For example:
+## My first Azure DevOps git repo
 
-- <https://dev.azure.com/hchiam/_git/code-inspiration?path=%2Fazure-pipelines.yml>
-- <https://dev.azure.com/hchiam/code-inspiration/_build/results?buildId=42&view=logs&j=bf812b03-26a5-57bb-2723-1df9c646b646>
-- <https://dev.azure.com/hchiam/code-inspiration/_build>
+<https://dev.azure.com/hchiam/_git/test-azure-devops-project>
+
+## Selenium IDE test example
+
+<https://dev.azure.com/hchiam/code-inspiration>
+
+Selenium IDE (as opposed to Selenium WebDriver) is very easy to set up locally: just install a Chrome Extension or Firefox Addon with a few clicks, and record actions directly in the browser. However, certain actions will not replay correctly when you use the CLI command, or require workarounds/tricks to work (in which case, you might want to use Cypress - see the other example).
+
+This is an `azure-pipelines.yml` configuration file that runs the app while running a Selenium .side test: <https://dev.azure.com/hchiam/_git/code-inspiration?path=%2Fazure-pipelines.yml>
 
 <details>
 
-<summary>Example `azure-pipelines.yml` that can run the app while running a Selenium .side test: (Click to expand)</summary>
+<summary>YAML: (Click to expand)</summary>
 
 ```yaml
 trigger:
@@ -64,19 +70,19 @@ stages:
 
 </details>
 
-Another example:
+Results:
 
-- Release CD pipeline: <https://dev.azure.com/hchiam/react-app/_releaseProgress?_a=release-pipeline-progress&releaseId=1>
-- <https://github.com/hchiam/react-app>
-- <https://dev.azure.com/hchiam/react-app/_build/results?buildId=11&view=logs&j=275f1d19-1bd8-5591-b06b-07d489ea915a>
+<https://dev.azure.com/hchiam/code-inspiration/_build/results?buildId=42&view=logs&j=bf812b03-26a5-57bb-2723-1df9c646b646&t=8be40cd7-2387-56cf-0dc5-8e64b7786d0a>
 
-## More learning
+<https://dev.azure.com/hchiam/code-inspiration/_build>
 
-<https://www.youtube.com/watch?v=H-R2bCXfz8I>
-
-## Example of an Azure Devops repo running Cypress tests (+Cucumber/Gherkin)
+## Cypress test example (+Cucumber/Gherkin)
 
 <https://dev.azure.com/hchiam/_git/test-cypress?path=README.md>
+
+The interface part of Cypress is very developer-friendly. Currently supports Chrome, Firefox, Edge, and Electron, but not Internet Explorer yet as of February 2020 (in which case, you might want to use Selenium WebDriver - see the other example).
+
+Here's an example test configuration for Azure DevOps:
 
 <details>
 
@@ -104,11 +110,17 @@ steps:
 
 </details>
 
-## Example of an Azure DevOps repo running cross-browser testing
+Results:
 
-Selenium WebDriver on Firefox (could also be on Chrome and Internet Explorer): <https://dev.azure.com/hchiam/test-cross-browser-testing/_git/test-cross-browser-testing-selenium?path=README.md>
+<https://dev.azure.com/hchiam/test-cypress/_build/results?buildId=48&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=5caf77c8-9b10-50ef-b5c7-ca89c63e1c86>
 
-Results: <https://dev.azure.com/hchiam/test-cross-browser-testing/_build/results?buildId=51&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=5caf77c8-9b10-50ef-b5c7-ca89c63e1c86>
+## Selenium WebDriver test example (cross-browser testing)
+
+<https://dev.azure.com/hchiam/test-cross-browser-testing/_git/test-cross-browser-testing-selenium?path=README.md>
+
+Selenium WebDriver can run on Firefox, Chrome, Internet Explorer, and more. It has APIs for different programming languages, which includes JavaScript via [`selenium-webdriver`](https://www.npmjs.com/package/selenium-webdriver#installation).
+
+Here's an example test configuration for Azure DevOps:
 
 <details>
 
@@ -135,3 +147,15 @@ steps:
 ```
 
 </details>
+
+Results: <https://dev.azure.com/hchiam/test-cross-browser-testing/_build/results?buildId=51&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=5caf77c8-9b10-50ef-b5c7-ca89c63e1c86>
+
+## Another example:
+
+- Release CD pipeline: <https://dev.azure.com/hchiam/react-app/_releaseProgress?_a=release-pipeline-progress&releaseId=1>
+- <https://github.com/hchiam/react-app>
+- <https://dev.azure.com/hchiam/react-app/_build/results?buildId=11&view=logs&j=275f1d19-1bd8-5591-b06b-07d489ea915a>
+
+## Further learning
+
+<https://www.youtube.com/watch?v=H-R2bCXfz8I>
