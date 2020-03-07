@@ -4,11 +4,11 @@ Just one of the things I'm learning. <https://github.com/hchiam/learning>
 
 Just like Travis CI on GitHub, you can set up automated tests in Azure DevOps to run whenever you commit to master: use Pipelines, select a template, and it'll run automatically. `azure-pipelines.yml` can be automagically generated or manually created to set up your tests.
 
-## My first Azure DevOps git repo
+## [My first Azure DevOps git repo](https://dev.azure.com/hchiam/_git/test-azure-devops-project)
 
 <https://dev.azure.com/hchiam/_git/test-azure-devops-project>
 
-## Selenium IDE test example
+## [Selenium IDE test example](https://dev.azure.com/hchiam/code-inspiration)
 
 <https://dev.azure.com/hchiam/code-inspiration>
 
@@ -76,7 +76,7 @@ Results:
 
 <https://dev.azure.com/hchiam/code-inspiration/_build>
 
-## Cypress test example (+Cucumber/Gherkin)
+## [Cypress test example (+Cucumber/Gherkin)](https://dev.azure.com/hchiam/_git/test-cypress?path=README.md)
 
 <https://dev.azure.com/hchiam/_git/test-cypress?path=README.md>
 
@@ -114,7 +114,7 @@ Results:
 
 <https://dev.azure.com/hchiam/test-cypress/_build/results?buildId=48&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=5caf77c8-9b10-50ef-b5c7-ca89c63e1c86>
 
-## Selenium WebDriver test example (cross-browser testing)
+## [Selenium WebDriver test example (cross-browser testing)](https://dev.azure.com/hchiam/test-cross-browser-testing/_git/test-cross-browser-testing-selenium?path=README.md)
 
 <https://dev.azure.com/hchiam/test-cross-browser-testing/_git/test-cross-browser-testing-selenium?path=README.md>
 
@@ -150,7 +150,7 @@ steps:
 
 Results: <https://dev.azure.com/hchiam/test-cross-browser-testing/_build/results?buildId=51&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=5caf77c8-9b10-50ef-b5c7-ca89c63e1c86>
 
-## Another example:
+## [Another example](https://dev.azure.com/hchiam/react-app/_releaseProgress?_a=release-pipeline-progress&releaseId=1)
 
 - Release CD pipeline: <https://dev.azure.com/hchiam/react-app/_releaseProgress?_a=release-pipeline-progress&releaseId=1>
 - <https://github.com/hchiam/react-app>
