@@ -152,6 +152,8 @@ steps:
 
 Results: <https://dev.azure.com/hchiam/test-cross-browser-testing/_build/results?buildId=51&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=5caf77c8-9b10-50ef-b5c7-ca89c63e1c86>
 
+In another repo, here's an example Selenium WebDriver test (running with Node.js) that runs Firefox in headless mode, has hover/mouseover step examples, and properly fails/passes husky pre-commit hooks: <https://github.com/hchiam/code-inspiration/blob/5c60bbdeb8f445a5e3c1d7431378c78e71515b51/selenium-test.js>
+
 ## [Another example](https://dev.azure.com/hchiam/react-app/_releaseProgress?_a=release-pipeline-progress&releaseId=1)
 
 - Release CD pipeline: <https://dev.azure.com/hchiam/react-app/_releaseProgress?_a=release-pipeline-progress&releaseId=1>
